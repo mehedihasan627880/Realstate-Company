@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="top-header-section">
+        <div class="container">
+            <div class="main-column">
+             <div class="left-column">
+                <img src="image/banner_1647766.png" alt="">
+             </div>
+             <div class="right-column">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+             </div>
+            </div>
+        </div>
+
+    </section>
+   <section class="banner-section">
+    
+        <img src="image/6031590.jpg" alt="">
+    
+   </section>
+
+<section class="form">
+    <div class="container">
+        <div class="main-column">
+            <div class="left">
+                <form>
+                    <h2>Contact Us</h2>
+                    <div class="main">
+                        <div class="left-box">
+                            <input type="text" placeholder="Name">
+                        </div>
+                        <div class="right-box">
+                            <input type="email" placeholder="Email">
+                        </div>
+                    </div>
+                   <input type="number" placeholder="Number">
+                 <textarea placeholder="Message"></textarea>
+                 <div class="batton">
+                    <a href="#">Submit</a>
+                 </div>
+                </form>
+            </div>
+            <div class="right">
+                <h2>Our Location</h2>
+    
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.446759106919!2d-122.4194154846811!3d37.77492977975969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064d3b624cf%3A0x92b496b2c27f3d!2s123%20Main%20St%2C%20San%20Francisco%2C%20CA%209418!5e0!3m2!1sen!2sus!4v1635452409586!5m2!1sen!2sus"
+      width="400"
+      height="300"
+      style="border:0;"
+      allowfullscreen=""
+      loading="lazy">
+    </iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+   <section class="footer-section">
+    <div class="container">
+        <div class="main-column">
+            <div class="flex">
+                <img src="image/banner_1647766.png" alt="">
+                <ul>
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-brands fa-square-instagram"></i></li>
+                </ul>
+                
+    <p id="date-time"></p>
+            </div>
+            
+        </div>
+    </div>
+   </section>
+   <script>
+    function updateDateTime() {
+        const now = new Date();
+
+        const year = now.getFullYear();
+        const month = String(now.getMonth() + 1).padStart(2, '0'); // Months are zero-based
+        const day = String(now.getDate()).padStart(2, '0');
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const seconds = String(now.getSeconds()).padStart(2, '0');
+
+        const dateTimeString = `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+        
+        document.getElementById('date-time').textContent = dateTimeString;
+    }
+
+    updateDateTime();
+    setInterval(updateDateTime, 1000); // Update every second
+</script>
+</body>
+</html>

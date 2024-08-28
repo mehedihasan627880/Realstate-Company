@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABout</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="top-header-section">
+        <div class="container">
+            <div class="main-column">
+             <div class="left-column">
+                <img src="image/banner_1647766.png" alt="">
+             </div>
+             <div class="right-column">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+             </div>
+            </div>
+        </div>
+
+    </section>
+   <section class="banner-section">
+    
+        <img src="image/6031590.jpg" alt="">
+    
+   </section>
+<section class="staf-profile">
+    <div class="container">
+        <h2>Stafs Profile</h2>
+        <div class="main-column">
+            <div class="flex">
+             <img src="image/Untitled-1.jpg" alt="">
+             <p class="sk"><strong>Obayedur Rahman</strong></p>
+             <p>Chairman</p>
+            </div>
+            <div class="flex">
+                <img src="image/Untitled-2.jpg" alt="">
+                <p class="sk"><strong>Ononna Pandy</strong></p>
+                <p>Marketing Officer</p>
+               </div>
+               <div class="flex">
+                <img src="image/Untitled-13.jpg" alt="">
+                <p class="sk"><strong>Mobarok Hossain</strong></p>
+                <p>Manager</p>
+               </div>
+        </div>
+    </div>
+</section>
+<section class="about-company">
+    <div class="container">
+        <h2>About Our Company</h2>
+        <div class="main-column">
+            <div class="left">
+                <img src="image/Untitled-14.jpg" alt="">
+            </div>
+            <div class="right">
+                <h1>Integrity . Transparency . Competency </h1>
+                <p>These principles guide our actions so that each client is treated with utmost care and respect. Buyers and Sellers are kept abreast of all aspects of the transaction through the transparent negotiation process in which all parties have full disclosure. We are not afraid to turn business down and strive to only work with clients who understand our values, ethics and competence. </p>
+            </div>
+        </div>
+    </div>
+</section>
+   <section class="footer-section">
+    <div class="container">
+        <div class="main-column">
+            <div class="flex">
+                <img src="image/banner_1647766.png" alt="">
+                <ul>
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-brands fa-square-instagram"></i></li>
+                </ul>
+                
+    <p id="date-time"></p>
+            </div>
+            
+        </div>
+    </div>
+   </section>
+   <script>
+    function updateDateTime() {
+        const now = new Date();
+
+        const year = now.getFullYear();
+        const month = String(now.getMonth() + 1).padStart(2, '0'); // Months are zero-based
+        const day = String(now.getDate()).padStart(2, '0');
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const seconds = String(now.getSeconds()).padStart(2, '0');
+
+        const dateTimeString = `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+        
+        document.getElementById('date-time').textContent = dateTimeString;
+    }
+
+    updateDateTime();
+    setInterval(updateDateTime, 1000); // Update every second
+</script>
+</body>
+</html>

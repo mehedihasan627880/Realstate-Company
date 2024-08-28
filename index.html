@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="top-header-section">
+        <div class="container">
+            <div class="main-column">
+             <div class="left-column">
+                <img src="image/banner_1647766.png" alt="">
+             </div>
+             <div class="right-column">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+             </div>
+            </div>
+        </div>
+
+    </section>
+   <section class="banner-section">
+    
+        <img src="image/6031590.jpg" alt="">
+    
+   </section>
+   <section class="details">
+    <div class="container">
+        <h2>OUR CLINTS</h2>
+        <div class="main-column">
+            <div class="flex">
+                <img src="image/Untitled-3.jpg" alt="">
+            </div>
+            <div class="flex">
+                <img src="image/Untitled-4.jpg" alt="">
+            </div>
+            <div class="flex">
+                <img src="image/Untitled-5.jpg" alt="">
+            </div>
+            <div class="flex">
+                <img src="image/Untitled-6.jpg" alt="">
+            </div>
+        </div>
+    </div>
+   </section>
+   <section class="feedback">
+    <h2>Clints Feedback</h2>
+    <div class="container">
+        <div class="box">
+            <p>Web design and development With wordpress. European IT Solutions is one of the best institutes in Bangladesh. I came here to learn a lot, especially with the help of Faruk Ahmed Sir. I was able to improve my skills a lot. I am blessed to have a mentor like Faruk Ahmed Sir.</p>
+            <div class="column">
+                <div class="left">
+                    <img src="image/IMG_20240815_041040_307.jpg" alt="">
+                </div>
+                <div class="right">
+                    <ul>
+                        <li><strong>Nowshin Tabassum</strong></li>
+                        <li>Course: Web Design</li>
+                        <li>Batch:EITWDDWW221007</li>
+
+                     
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="box">
+            <p>Web design and development With wordpress. European IT Solutions is one of the best institutes in Bangladesh. I came here to learn a lot, especially with the help of Faruk Ahmed Sir. I was able to improve my skills a lot. I am blessed to have a mentor like Faruk Ahmed Sir.</p>
+            <div class="column">
+                <div class="left">
+                    <img src="image/Mehedi Hasan .jpg" alt="">
+                </div>
+                <div class="right">
+                    <ul>
+                        <li><strong>Mehedi Hasan</strong></li>
+                        <li>Course: Web Design</li>
+                        <li>Batch:EITWDDWW22100</li>
+
+                     
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   </section>
+   <section class="gallery-section">
+    <h2>Gallery</h2>
+    <div class="container">
+        <div class="column">
+            <div class="flex">
+                <img src="image/Untitled-7.jpg" alt="">
+            </div>
+            <div class="flex">
+                <img src="image/Untitled-8.jpg" alt="">
+            </div>
+            <div class="flex">
+                <img src="image/Untitled-9.jpg" alt="">
+            </div>
+            <div class="flex">
+                <img src="image/Untitled-7.jpg" alt="">
+            </div>
+            <div class="flex">
+                <img src="image/Untitled-11.jpg" alt="">
+            </div>
+            <div class="flex">
+                <img src="image/Untitled-12.jpg" alt="">
+            </div>
+        </div>
+    </div>
+   </section>
+   <section class="footer-section">
+    <div class="container">
+        <div class="main-column">
+            <div class="flex">
+                <img src="image/banner_1647766.png" alt="">
+                <ul>
+                    <li><i class="fa-brands fa-facebook"></i></li>
+                    <li><i class="fa-brands fa-square-instagram"></i></li>
+                </ul>
+                
+    <p id="date-time"></p>
+            </div>
+            
+        </div>
+    </div>
+   </section>
+   <script>
+    function updateDateTime() {
+        const now = new Date();
+
+        const year = now.getFullYear();
+        const month = String(now.getMonth() + 1).padStart(2, '0'); // Months are zero-based
+        const day = String(now.getDate()).padStart(2, '0');
+        const hours = String(now.getHours()).padStart(2, '0');
+        const minutes = String(now.getMinutes()).padStart(2, '0');
+        const seconds = String(now.getSeconds()).padStart(2, '0');
+
+        const dateTimeString = `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+        
+        document.getElementById('date-time').textContent = dateTimeString;
+    }
+
+    updateDateTime();
+    setInterval(updateDateTime, 1000); // Update every second
+</script>
+</body>
+</html>
